@@ -1,0 +1,103 @@
+.btn {
+  --bs-btn-line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-md {
+  --bs-btn-color: #{$light};
+  --bs-btn-bg: #{$dark};
+  --bs-btn-border-color: #{$dark};
+
+  --bs-btn-hover-color: #{$dark};
+  --bs-btn-hover-bg: #{$secondary};
+  --bs-btn-hover-border-color: #{$secondary};
+
+  --bs-btn-active-color: #{$dark};
+  --bs-btn-active-bg: #{$secondary};
+  --bs-btn-active-border-color: #{$secondary};
+
+  .icon {
+    font-size: 20px;
+    margin-right: -8px;
+  }
+}
+
+.btn-md-outline {
+  --bs-btn-color: #{$dark};
+  --bs-btn-bg: #{$light};
+  --bs-btn-border-color: #{$natural-85};
+
+  --bs-btn-hover-color: #{$dark};
+  --bs-btn-hover-bg: #{$natural-90};
+  --bs-btn-hover-border-color: #{$natural-90};
+
+  --bs-btn-active-color: #{$dark};
+  --bs-btn-active-bg: #{$natural-90};
+  --bs-btn-active-border-color: #{$natural-90};
+
+  .icon {
+    font-size: 20px;
+    margin-right: -8px;
+  }
+}
+
+.btn-lg {
+  --bs-btn-color: #{$dark};
+  --bs-btn-bg: #{$secondary};
+
+  --bs-btn-hover-color: #{$light};
+  --bs-btn-hover-bg: #{$primary};
+
+  --bs-btn-active-color: #{$light};
+  --bs-btn-active-bg: #{$primary};
+
+  --bs-btn-border-width: 0;
+  --bs-btn-font-weight: 700;
+
+  .icon {
+    font-size: 28px;
+    margin-right: -8px;
+  }
+}
+
+.btn-only-icon {
+  --bs-btn-color: #{$dark};
+  --bs-btn-bg: transparent;
+
+  --bs-btn-hover-color: #{$dark};
+  --bs-btn-hover-bg: #{$natural-90};
+
+  --bs-btn-active-color: #{$dark};
+  --bs-btn-active-bg: #{$natural-90};
+
+  --bs-btn-border-width: 0;
+  --bs-btn-padding-x: 10px;
+  --bs-btn-padding-y: 10px;
+
+  .icon {
+    font-size: 24px;
+  }
+}
+
+.btn-sm {
+  --bs-btn-color: #{$natural-50};
+  --bs-btn-bg: #{$light};
+  --bs-btn-border-color: #{$natural-85};
+
+  --bs-btn-hover-color: #{$natural-50};
+  --bs-btn-hover-bg: #{$natural-90};
+  --bs-btn-hover-border-color: #{$natural-90};
+
+  --bs-btn-active-color: #{$natural-50};
+  --bs-btn-active-bg: #{$natural-90};
+  --bs-btn-active-border-color: #{$natural-90};
+
+  gap: 0;
+
+  .icon {
+    font-size: 20px;
+    margin-right: -4px;
+  }
+}

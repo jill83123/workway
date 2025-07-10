@@ -78,8 +78,9 @@ $utilities: map-merge(
       class: shadow,
       values: (
         null: var(--#{$prefix}box-shadow),
-        sm: var(--#{$prefix}box-shadow-sm),
-        lg: var(--#{$prefix}box-shadow-lg),
+        sm:   var(--#{$prefix}box-shadow-sm),
+        lg:   var(--#{$prefix}box-shadow-lg),
+        card: $card-box-shadow,
         none: none,
       )
     ),
@@ -505,7 +506,8 @@ $utilities: map-merge(
       values: (monospace: var(--#{$prefix}font-monospace))
     ),
     "font-size": (
-      rfs: true,
+      // rfs: true,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -714,11 +716,9 @@ $utilities: map-merge(
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
+        sm: var(--#{$prefix}border-radius-sm),
+        md: var(--#{$prefix}border-radius-md),
+        xl: var(--#{$prefix}border-radius-xl),
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )

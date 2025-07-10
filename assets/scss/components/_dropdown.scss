@@ -1,0 +1,37 @@
+.dropdown .dropdown-toggle {
+  line-height: 1.5;
+  padding: 16px 12px;
+  border: 1px solid $natural-85;
+  border-radius: 8px;
+
+  &::after {
+    content: 'stat_minus_1';
+    font-family: 'Material Symbols Outlined';
+    font-size: 20px;
+    line-height: 1;
+    border: 0;
+    margin-left: auto;
+  }
+
+  &:active {
+    --bs-btn-active-border-color: #{$natural-85};
+  }
+}
+
+.dropdown-filter .dropdown-toggle {
+  line-height: 1;
+  padding: 12px 20px;
+  border-radius: $border-radius-md;
+
+  &::after {
+    content: 'filter_list';
+  }
+}
+
+.dropdown-menu {
+  box-shadow: $card-box-shadow;
+
+  &.show {
+    inset: 6px auto auto 0px !important;
+  }
+}

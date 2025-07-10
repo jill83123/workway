@@ -1,0 +1,40 @@
+// radio, checkbox
+.form-check-input:checked[type='radio'] {
+  background-color: #{$light};
+}
+
+.was-validated .form-check-input:invalid,
+.form-check-input.is-invalid {
+  background-color: $danger-90;
+}
+
+.form-check-input:disabled {
+  background-color: $natural-75;
+  border-color: $natural-75;
+}
+
+// form-floating label
+.form-floating > label {
+  color: $dark;
+}
+
+.form-control:focus ~ label {
+  color: $natural-50;
+}
+
+// error text
+.invalid-feedback {
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+  font-size: 12px;
+  background: $danger-90;
+
+  &::before {
+    content: 'error';
+    font-family: 'Material Symbols Outlined';
+    font-size: 12px;
+    line-height: 1;
+  }
+}
