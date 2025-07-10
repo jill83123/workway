@@ -101,3 +101,24 @@
     margin-right: -4px;
   }
 }
+
+.nav-btn {
+  color: $body-color;
+  border: 1px solid transparent;
+  border-radius: $border-radius-md;
+  padding: 8px 24px;
+
+  @include media-breakpoint-down(sm) {
+    border-radius: $border-radius-sm;
+    padding: 8px 16px;
+  }
+
+  &-outline {
+    border-color: $natural-85;
+  }
+
+  &:hover {
+    border-color: $natural-90;
+    background-color: $natural-90;
+  }
+}

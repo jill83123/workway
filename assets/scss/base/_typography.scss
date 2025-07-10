@@ -1,0 +1,40 @@
+.font-tw {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.font-en {
+  font-family: 'Inter', sans-serif;
+}
+
+// mobile font sizes
+@include media-breakpoint-down(sm) {
+  .fs-xs {
+    font-size: 12px !important;
+  }
+  .fs-sm {
+    font-size: 14px !important;
+  }
+  .fs-md {
+    font-size: 14px !important;
+  }
+  .fs-lg {
+    font-size: 16px !important;
+  }
+  .fs-xl {
+    font-size: 18px !important;
+  }
+  .fs-2xl {
+    font-size: 20px !important;
+  }
+  .fs-3xl {
+    font-size: 24px !important;
+  }
+  .fs-4xl {
+    font-size: 28px !important;
+  }
+  .fs-5xl {
+    font-size: 32px !important;
+  }
+  .fs-display {
+    font-size: 48px !important;
+  }
+}

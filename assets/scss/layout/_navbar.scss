@@ -1,0 +1,22 @@
+.navbar {
+  @include media-breakpoint-down(lg) {
+    .container {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+
+  .logo-img {
+    width: 124px;
+    height: auto;
+
+    @include media-breakpoint-down(lg) {
+      width: 92px;
+    }
+  }
+
+  .avatar-img {
+    width: 44px;
+    height: 44px;
+  }
+}

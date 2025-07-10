@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba($natural-85, 0) 0%,
+      $natural-85 50%,
+      rgba($natural-85, 0) 100%
+    )
+    1;
+
+  .copyright {
+    line-height: 40px;
+  }
+}

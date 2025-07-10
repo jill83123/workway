@@ -1,3 +1,23 @@
 .tracking-normal {
   letter-spacing: 0em;
 }
+
+.my-bg-primary {
+  background-color: $light;
+}
+.my-bg-secondary {
+  background-color: $natural-95;
+}
+.my-bg-action-primary {
+  background-color: $primary;
+}
+.my-bg-action-secondary {
+  background-color: $secondary-90;
+}
+
+.my-text-primary {
+  color: $dark;
+}
+.my-text-secondary {
+  color: $natural-50;
+}
