@@ -1,0 +1,43 @@
+<main class="my-bg-secondary py-12 py-sm-20">
+  <nav class="mb-4 mb-sm-6">
+    <ul class="d-flex justify-content-center gap-4 px-2 gap-sm-6">
+      <li>
+        <a
+          href="profile.html"
+          class="btn btn-md-outline<% if (page === 'profile') { %> active<% } %>"
+        >
+          <span class="material-symbols-outlined">face</span>個人資料
+        </a>
+      </li>
+      <li>
+        <a
+          href="reserve.html"
+          class="btn btn-md-outline<% if (page === 'reserve') { %> active<% } %>"
+        >
+          <span class="material-symbols-outlined">pending_actions</span>預約紀錄
+        </a>
+      </li>
+      <li>
+        <a href="plan.html" class="btn btn-md-outline<% if (page === 'plan') { %> active<% } %>">
+          <span class="material-symbols-outlined">list_alt</span>職旅計劃
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="card d-block p-6 p-sm-12">
+          <% if (page === 'profile') { %>
+            <%- include('../contents/profile') %>
+          <% } else if (page === 'reserve') { %>
+            <%- include('../contents/reserve') %>
+          <% } else if (page === 'plan') { %>
+            <%- include('../contents/plan') %>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

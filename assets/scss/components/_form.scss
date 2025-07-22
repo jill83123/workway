@@ -18,7 +18,8 @@
   color: $dark;
 }
 
-.form-control:focus ~ label {
+.form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
   color: $natural-50;
 }
 

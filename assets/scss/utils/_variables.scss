@@ -455,6 +455,7 @@ $spacers: (
   8:  32px,
   10: 40px,
   12: 48px,
+  14: 56px,
   16: 64px,
   18: 72px,
   20: 80px
@@ -981,7 +982,7 @@ $form-color-width:                      3rem !default;
 $form-check-input-width:                  1.25em !default;
 $form-check-min-height:                   $font-size-base * $line-height-base !default;
 $form-check-padding-start:                $form-check-input-width + .5em !default;
-$form-check-margin-bottom:                .125rem !default;
+$form-check-margin-bottom:                0 !default;
 $form-check-label-color:                  null !default;
 $form-check-label-cursor:                 null !default;
 $form-check-transition:                   null !default;
@@ -1387,8 +1388,8 @@ $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
 $card-border-width:                 var(--#{$prefix}border-width) !default;
-$card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                var(--#{$prefix}border-radius) !default;
+$card-border-color:                 transparent !default;
+$card-border-radius:                $border-radius-xl !default;
 $card-box-shadow:                   0px 0px 16px 0px rgba(0, 0, 0, 0.12) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;

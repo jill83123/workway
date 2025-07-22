@@ -1,0 +1,7 @@
+.card {
+  box-shadow: var(--bs-card-box-shadow);
+
+  @include media-breakpoint-down(sm) {
+    --bs-card-border-radius: #{$border-radius-md};
+  }
+}
