@@ -1,3 +1,20 @@
+.table th:first-child,
+.table td:first-child {
+  width: auto;
+}
+.table th:not(:first-child),
+.table td:not(:first-child) {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.table thead th {
+  padding: 12px;
+}
+.table tbody th {
+  font-weight: 400;
+}
+
 .table > tbody > tr.finished > * {
   --bs-table-color-state: #{$natural-60};
 }

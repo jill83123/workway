@@ -1,0 +1,28 @@
+.reserve-list {
+  .list-item {
+    border-top: 1px solid $natural-85;
+
+    &:nth-of-type(even) {
+      background: $natural-90;
+    }
+
+    &.finished > .list-body {
+      color: $natural-60;
+    }
+  }
+
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px;
+  }
+
+  .list-body {
+    color: $natural-50;
+  }
+
+  .info-item {
+    display: inline-block;
+    padding: 12px 8px;
+  }
+}

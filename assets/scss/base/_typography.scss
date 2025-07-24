@@ -5,6 +5,15 @@
   font-family: 'Inter', sans-serif;
 }
 
+.heading {
+  line-height: 1.2;
+  font-weight: 700;
+}
+.heading-sm {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
 // mobile font sizes
 @include media-breakpoint-down(sm) {
   .fs-xs {

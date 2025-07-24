@@ -18,20 +18,10 @@
   }
 }
 
-.dropdown-filter .dropdown-toggle {
-  line-height: 1;
-  padding: 12px 20px;
-  border-radius: $border-radius-md;
-
-  &::after {
-    content: 'filter_list';
-  }
-}
-
 .dropdown-menu {
   box-shadow: $card-box-shadow;
 
   &.show {
-    inset: 6px auto auto 0px !important;
+    top: 8px !important;
   }
 }
