@@ -30,8 +30,7 @@
   --bs-btn-active-bg: #{$secondary};
   --bs-btn-active-border-color: #{$secondary};
 
-  .icon {
-    font-size: 20px;
+  .arrow-icon {
     margin-right: -8px;
   }
 }
@@ -49,8 +48,7 @@
   --bs-btn-active-bg: #{$natural-90};
   --bs-btn-active-border-color: #{$natural-90};
 
-  .icon {
-    font-size: 20px;
+  .arrow-icon {
     margin-right: -8px;
   }
 }
@@ -68,7 +66,7 @@
   --bs-btn-border-width: 0;
   --bs-btn-font-weight: 700;
 
-  .icon {
+  .arrow-icon {
     font-size: 28px;
     margin-right: -8px;
   }
@@ -108,8 +106,7 @@
 
   gap: 0;
 
-  .icon {
-    font-size: 20px;
+  .arrow-icon {
     margin-right: -4px;
   }
 }

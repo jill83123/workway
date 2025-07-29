@@ -5,3 +5,14 @@
     --bs-card-border-radius: #{$border-radius-md};
   }
 }
+
+.card-title-block {
+  @include media-breakpoint-up(lg) {
+    max-width: 300px;
+    width: 30%;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: 100%;
+  }
+}

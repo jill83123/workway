@@ -1,29 +1,59 @@
-// radio, checkbox
-.form-check-input:checked[type='radio'] {
-  background-color: #{$light};
+// ===== radio & checkbox =====
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+
+  .form-check-input {
+    margin-top: 0;
+
+    &:checked[type='radio'] {
+      background-color: #{$light};
+    }
+
+    &:disabled {
+      background-color: $natural-75;
+      border-color: $natural-75;
+    }
+
+    &:invalid,
+    &.is-invalid {
+      background-color: $danger-90;
+    }
+  }
 }
 
-.was-validated .form-check-input:invalid,
-.form-check-input.is-invalid {
-  background-color: $danger-90;
+// ===== form floating =====
+.form-floating {
+  border-radius: 8px;
+
+  // label
+  & > label {
+    color: $dark;
+  }
+  & .form-control:focus ~ label,
+  & > .form-control:not(:placeholder-shown) ~ label {
+    color: $natural-50;
+  }
+
+  // textarea
+  & > textarea.form-control {
+    height: 160px;
+
+    & ~ label {
+      white-space: normal;
+    }
+
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label {
+      max-width: calc(100% / 0.85);
+      white-space: nowrap;
+    }
+  }
 }
 
-.form-check-input:disabled {
-  background-color: $natural-75;
-  border-color: $natural-75;
-}
-
-// form-floating label
-.form-floating > label {
-  color: $dark;
-}
-
-.form-control:focus ~ label,
-.form-floating > .form-control:not(:placeholder-shown) ~ label {
-  color: $natural-50;
-}
-
-// error text
+// ===== error text =====
 .invalid-feedback {
   display: flex !important;
   align-items: center;
